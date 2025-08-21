@@ -57,7 +57,7 @@ T1 <- function(sample_data, significance_level){
   } else {
     result <- "Do not reject null hypothesis"
   }
-  return(paste("Critical value:", quantile_value, "; D_AMax Test statistic:", D_Amax, "; Result:", result))
+  return(paste("Critical value:", quantile_value, "; T1 Test statistic:", D_Amax, "; Result:", result))
 }
 
 
@@ -120,8 +120,9 @@ T2 <- function(sample_data, significance_level){
   } else {
     result <- "Do not reject null hypothesis"
   }
-  return(paste("Critical value:", quantile_value, "; D_AMax Test statistic:", D_Amin, "; Result:", result))
+  return(paste("Critical value:", quantile_value, "; T2 Test statistic:", D_Amin, "; Result:", result))
 }
+
 
 
 
