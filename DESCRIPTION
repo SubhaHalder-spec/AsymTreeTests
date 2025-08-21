@@ -1,0 +1,16 @@
+Package: AsymTreeTests
+Type: Package
+Title: T1 and T2 Tests for Testing Against Tree Ordered Alternatives in One-Way ANOVA
+Version: 0.2.0
+Author: person(given = "Subha",
+           family = "Halder",
+           email = "sb.halder123456@gmail.com",
+           role = c("aut", "cre"))
+Maintainer: Subha Halder <sb.halder123456@gmail.com>
+Description: Provides two asymptotic tests (T1 and T2) for testing equality of means against tree ordered alternatives in one-way ANOVA. Specifically, it tests the null hypothesis H0: mu0 = mu1 = ... = muk against the alternative H1: mu0 <= mui (with at least one strict inequality), where mu0 is the population mean of the control group and mui are the means of the treatment groups. The input consists of two variables: 'sample_data' and 'significance_level'. The output includes the critical value, the test statistic, and the decision to reject or not reject the null hypothesis. If the test statistic exceeds the critical value, the null hypothesis is rejected. 
+Usage: T1(sample_data, significance_level) and T2(sample_data, significance_level)
+Imports: MASS
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
